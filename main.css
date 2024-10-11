@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: fantasy;
+}
+
+.container{
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+ 
+}
+
+
+.grid-card{
+
+   
+    
+}
+.card{
+    
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    padding: 65px;
+   
+}
+
+
+.grid__wrapper{
+ 
+}
+
+.grid-card {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.7fr 1.3fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 19px 15px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "card-1 card-1 card-2 card-3"
+      "card-1 card-1 card-4 card-5"
+      "card-6 card-7 card-10 card-10"
+      "card-8 card-9 card-10 card-10"
+      "card-11 card-11 card-12 card-13"
+      "card-11 card-11 card-14 card-15";
+}
+   
+  
+  .card-1 { grid-area: card-1; }
+  
+  .card-2 { grid-area: card-2; }
+  
+  .card-3 { grid-area: card-3; }
+  
+  .card-4 { grid-area: card-4; }
+  
+  .card-5 { grid-area: card-5; }
+  
+  .card-6 { grid-area: card-6; }
+  
+  .card-7 { grid-area: card-7; }
+  
+  .card-8 { grid-area: card-8; }
+  
+  .card-9 { grid-area: card-9; }
+  
+  .card-10 { grid-area: card-10; }
+  
+  .card-11 { grid-area: card-11; }
+  
+  .card-12 { grid-area: card-12; }
+  
+  .card-13 { grid-area: card-13; }
+  
+  .card-14 { grid-area: card-14; }
+  
+  .card-15 { grid-area: card-15; }
+  
+
+   @media (max-width:640px) {
+    .grid-card {  display: grid;
+        grid-template-columns: 1fr 0.8fr 1.2fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1.2fr 0.8fr;
+        grid-auto-columns: 1fr;
+        gap: 19px 15px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "card-1 card-1 card-2"
+          "card-1 card-1 card-3"
+          "card-4 card-6 card-6"
+          "card-5 card-6 card-6"
+          "card-7 card-7 card-8"
+          "card-7 card-7 card-9";
+      }
+      
+      .card-1 { grid-area: card-1; }
+      
+      .card-2 { grid-area: card-2; }
+      
+      .card-3 { grid-area: card-3; }
+      
+      .card-6 { grid-area: card-6; }
+      
+      .card-4 { grid-area: card-4; }
+      
+      .card-5 { grid-area: card-5; }
+      
+      .card-7 { grid-area: card-7; }
+      
+      .card-8 { grid-area: card-8; }
+      
+      .card-9 { grid-area: card-9; }
+      
+      .card-10 {display: none;}
+
+      .card-11 {display: none;}
+
+      .card-12 {display: none;}
+
+      .card-13 {display: none;}
+
+      .card-14 {display: none;}
+
+      .card-15 {display: none;}
+  }
